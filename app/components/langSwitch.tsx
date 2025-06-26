@@ -14,12 +14,12 @@ export default function LangSwitch() {
     };
 
     const languageOptions = [
-        { value: 'en', label: i18n.t('english') },
-        { value: 'id', label: i18n.t('indonesia') }
+        { value: 'en', label: i18n.t('English') },
+        { value: 'id', label: i18n.t('Indonesia') }
     ];
 
     return (
-        <select onChange={handleLanguageChange} value={i18n.language} className="p-2 border rounded dark:text-white">
+        <select onChange={handleLanguageChange} value={i18n.language} className="text-gray-900 p-2 border rounded dark:text-white">
             {languageOptions.map((option) => (
                 <option key={option.value} value={option.value}>
                     {option.label}

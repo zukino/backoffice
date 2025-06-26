@@ -41,7 +41,7 @@ export default function ToggleTheme() {
 
             <button
                 onClick={toggleTheme}
-                className="fixed top-4 right-4 p-3 rounded-full bg-gray-200 dark:bg-gray-700 shadow-md transition-all duration-300 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50"
+                className="fixed top-4 right-4 p-3 rounded-xl bg-gray-200 dark:bg-gray-700 shadow-md transition-all duration-300 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50"
             >
                 <i className={`${theme === 'dark' ? 'fas fa-moon' : 'fas fa-sun'} text-gray-800 dark:text-gray-200 text-lg`}></i>
             </button>

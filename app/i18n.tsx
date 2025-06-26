@@ -15,6 +15,7 @@ i18n
                     sign_in: 'Sign in',
                     username: 'Username',
                     password: 'Password',
+                    show_password: 'Show password',
                 },
             },
             id: {
@@ -24,7 +25,8 @@ i18n
                     login: 'Masuk',
                     sign_in: 'Masuk Akun',
                     username: 'Nama Pengguna',
-                    password: 'Kata Sandi',
+                    password: 'Sandi',
+                    show_password: 'Tampilkan sandi',
                 },
             },
         },

@@ -1,5 +1,5 @@
+import LoginWithCard2 from "~/components/loginWithCardv2";
 import type { Route } from "./+types/login";
-import LoginWithCard from "~/components/loginWithCard";
 
 export function meta({ }: Route.MetaArgs) {
   return [
@@ -11,6 +11,6 @@ export function meta({ }: Route.MetaArgs) {
 export default function Login() {
 
   return (
-    <LoginWithCard />
+    <LoginWithCard2 />
   );
 }
