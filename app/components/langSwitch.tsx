@@ -1,6 +1,7 @@
 import { useTranslation } from 'react-i18next';
 
 export default function LangSwitch() {
+
     const { i18n } = useTranslation();
 
     const handleLanguageChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
@@ -14,8 +15,7 @@ export default function LangSwitch() {
 
     const languageOptions = [
         { value: 'en', label: i18n.t('english') },
-        { value: 'id', label: i18n.t('indonesia') },
-        { value: 'es', label: i18n.t('espanol') },
+        { value: 'id', label: i18n.t('indonesia') }
     ];
 
     return (

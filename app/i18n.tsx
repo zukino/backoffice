@@ -11,18 +11,20 @@ i18n
                 translation: {
                     welcome: 'Welcome to our app!',
                     greeting: 'Hello, {{name}}!',
+                    login: 'Login',
+                    sign_in: 'Sign in',
+                    username: 'Username',
+                    password: 'Password',
                 },
             },
             id: {
                 translation: {
                     welcome: 'Selamat datang di aplikasi kami!',
                     greeting: 'Apa kabar, {{name}}!',
-                },
-            },
-            es: {
-                translation: {
-                    welcome: '¡Bienvenido a nuestra aplicación!',
-                    greeting: '¡Hola, {{name}}!',
+                    login: 'Masuk',
+                    sign_in: 'Masuk Akun',
+                    username: 'Nama Pengguna',
+                    password: 'Kata Sandi',
                 },
             },
         },
