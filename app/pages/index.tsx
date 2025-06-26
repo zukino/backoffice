@@ -1,6 +1,7 @@
 import LangSwitch from "~/components/langSwitch";
 import type { Route } from "./+types/index";
 import { useTranslation } from 'react-i18next';
+import ToggleTheme from "~/components/togleTheme";
 
 export function meta({ }: Route.MetaArgs) {
     return [
@@ -15,9 +16,10 @@ export default function Index() {
 
     return (
         <div>
-            <h1>{t('welcome')}</h1>
+            <ToggleTheme />
+            <h1 className="dark:text-white">{t('welcome')}</h1>
             <br />
-            <h2>{t('greeting', { name: 'User' })}</h2>
+            <h2 className="dark:text-white">{t('greeting', { name: 'User' })}</h2>
             <br />
             <LangSwitch />
         </div>
