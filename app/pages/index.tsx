@@ -1,5 +1,6 @@
-import ToggleTheme from "~/components/togleTheme";
+import LangSwitch from "~/components/langSwitch";
 import type { Route } from "./+types/index";
+import { useTranslation } from 'react-i18next';
 
 export function meta({ }: Route.MetaArgs) {
     return [
@@ -9,12 +10,16 @@ export function meta({ }: Route.MetaArgs) {
 }
 
 export default function Index() {
-    return (
-        <div className="w-full h-screen flex items-center justify-center">
-            <ToggleTheme />
-            <div className="w-1/4 h-1/4 flex items-center justify-center bg-white dark:bg-gray-800">
 
-            </div>
+    const { t } = useTranslation();
+
+    return (
+        <div>
+            <h1>{t('welcome')}</h1>
+            <br />
+            <h2>{t('greeting', { name: 'User' })}</h2>
+            <br />
+            <LangSwitch />
         </div>
-    )
+    );
 }
